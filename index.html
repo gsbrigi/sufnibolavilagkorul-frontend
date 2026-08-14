@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sufniból a világ körül</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-900">
+
+    <!-- 1. FEJLÉC & NAVBAR -->
+    <header class="bg-slate-900 text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="header-container">
+            <h1 class="logo">Sufniból a világ körül</h1>
+            <nav class="main-nav">
+                <a href="#">Túrák</a>
+                <a href="#">Videók</a>
+                <a href="#">Rólunk</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SZEKCIÓ (KÉTRÉSZES ELRENDEZÉS) -->
+    <section class="hero-section">
+        <div class="hero-container container">
+
+            <!-- Bal oszlop: Szövegek és gomb -->
+            <div class="hero-content">
+                <h2 class="hero-title">Motorfelújítás és 20000 km-es Európa-túra</h2>
+                <p class="hero-text">Skacok, a kocsma ajtaja már zárva, de a Sufni kapuja most nyílik ki! 🛠️🏍️
+Sokan emlékeztek még a régi motoros estékre a Pokol Bárban, a nagy beszélgetésekre és a benzingőzre. A pult mögül most átköltöztem a szerelőasztal mellé.
+Van egy őrült tervem: Van egy 1992-es, négysebességes Suzuki VS 1400 Intruderem. Az utolsó csavarig szétkapom itt a sufniban, teljesen újjáépítem, majd elindulok vele egy 20 000 kilométeres, egész Európát és a Kaukázust átívelő brutális túrára. Nordkapp, Grossglockner, Transzfogaras, Albánia stb....
+Ez az oldal mostantól a Sufniból a világ körül projekt otthona. Itt fogom mutatni fotókkal, és hamarosan YouTube videókkal is a szerelést, a cumizást a csavarokkal, majd a kilométerek falását.
+Maradjatok velünk, mert pár héten belül lehull a lepel az első videóról, és indul a mandula! Ki tart velem?</p>
+                <a href="#legfrissebb" class="hero-btn">Legutóbbi videónk</a>
+            </div>
+
+            <!-- Jobb oszlop: A te képed -->
+            <div class="hero-image-box">
+                <img src="hero-motor.jpeg" alt="Motorfelújítás és túra" class="hero-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FŐ TARTALOM (GRID/FLEX) -->
+    <main class="main-content container" id="legfrissebb">
+        
+        <!-- BAL OLDAL: VIDEÓK ÉS BESZÁMOLÓK -->
+        <div class="content-left">
+            
+            <!-- YouTube Videó Kártya -->
+            <article class="card">
+                <!-- Reszponzív YouTube konténer -->
+                <div class="video-container">
+                    <iframe src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <span class="card-badge">Videós beszámoló</span>
+                    <h3 class="card-title">Elkészült a blokk! – Első indítás a sufniban</h3>
+                    <p class="card-text">Hosszú hetek munkája, rengeteg takarítás és alkatrész-vadászat után elérkezett a pillanat: vajon beindul a gép? Nézzétek meg a videót a részletekért!</p>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- JOBB OLDAL: SZPONZOROK / REKLÁMFELÜLET -->
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h4 class="sidebar-title">Támogatóink / Reklám</h4>
+                
+                <!-- Szponzor Box 1 -->
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="sponsor-ad spec-300x250">
+                    <div class="sponsor-placeholder">
+                        <span>SZPONZOR 1 BANNER<br>(300x250)</span>
+                    </div>
+                    <div class="sponsor-footer">
+                        <p>Kattints a kedvezményekért! &rarr;</p>
+                    </div>
+                </a>
+
+                <!-- Szponzor Box 2 -->
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="sponsor-ad spec-logo">
+                    <div class="sponsor-placeholder">
+                        <span>SZPONZOR 2 LOGÓ</span>
+                    </div>
+                </a>
+
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- LÁBLÉC -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Sufniból a világ körül. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>

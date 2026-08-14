@@ -1,0 +1,295 @@
+/* --- ALAP BEÁLLÍTÁSOK --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f6; /* Az oldal általános háttérszíne */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Szöveg stílusa */
+    color: #222222;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- FEJLÉC (NAVBAR) --- */
+.main-header {
+    background-color: #0f172a; /* Sötétkék/fekete fejléc */
+    color: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f59e0b; /* Narancs/Amber kiemelés */
+    letter-spacing: 1px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #f59e0b;
+}
+
+/* --- HERO SZEKCIÓ --- */
+.hero-section {
+    background-color: #1e293b; /* Elegáns sötét háttér a felső résznek */
+    color: #ffffff;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column; /* Telefonon egymás alá kerülnek */
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: center; /* Telefonon középre zárt */
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: #cbd5e1; /* Lágy szürke, hogy olvasható legyen a sötét alapon */
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #f59e0b; /* Vagány motoros narancs/amber */
+    color: #0f172a;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.hero-btn:hover {
+    background-color: #d97706;
+    transform: translateY(-2px);
+}
+
+/* Kép konténer és a kép stílusa */
+.hero-image-box {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Lekerekített sarkok a modern hatásért */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); /* Esztétikus árnyék a kép alá */
+    object-fit: cover;
+}
+
+/* --- ASZTALI SZÁMÍTÓGÉP TÖRÉSPONT --- */
+@media (min-width: 992px) {
+    .hero-container {
+        flex-direction: row; /* Gépen egymás mellé teszi a szöveget és a képet */
+        text-align: left;
+    }
+    
+    .hero-content {
+        text-align: left; /* Gépen balra zárt szöveg */
+        padding-right: 20px;
+    }
+
+    .hero-title {
+        font-size: 2.8rem; /* Nagyobb képernyőn nagyobb cím */
+    }
+}
+}
+
+/* --- FŐ ELRENDEZÉS (FLEX / GRID) --- */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Reszponzivitás gépre: ha a képernyő elég nagy, egymás mellé teszi őket */
+@media (min-width: 992px) {
+    .main-content {
+        flex-direction: row;
+    }
+    .content-left {
+        flex: 2; /* 70% körüli szélesség */
+    }
+    .sidebar {
+        flex: 1; /* 30% körüli szélesség */
+    }
+}
+
+/* --- KÁRTYÁK ÉS VIDEÓK --- */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 képarány megtartása */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #b45309;
+    text-transform: uppercase;
+    background-color: #fef3c7;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #4b5563;
+}
+
+/* --- REKLÁM / SZPONZOR OLDALSÁV --- */
+.sidebar-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #f59e0b;
+}
+
+.sidebar-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #9ca3af;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.sponsor-ad {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.sponsor-ad:hover {
+    border-color: #f59e0b;
+}
+
+.sponsor-placeholder {
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #6b7280;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: background-color 0.3s;
+}
+
+.sponsor-ad:hover .sponsor-placeholder {
+    background-color: #d1d5db;
+}
+
+/* Pontos reklámméretek */
+.spec-300x250 .sponsor-placeholder {
+    height: 250px;
+}
+
+.spec-logo .sponsor-placeholder {
+    height: 96px;
+}
+
+.sponsor-footer {
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+}
+
+.sponsor-ad:hover .sponsor-footer p {
+    color: #f59e0b;
+}
+
+/* --- LÁBLÉC --- */
+.main-footer {
+    background-color: #0f172a;
+    color: #9ca3af;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
