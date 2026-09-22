@@ -1,23 +1,13 @@
 # .
 
-This template should help get you started developing with Vue 3 in Vite.
+Cím: Sufniból a világ körül – Motoros blog és szponzori felület
 
-## Recommended IDE Setup
+Technológiák: Vue 3, Vue Router, HTML5, CSS3 (Grid & Flexbox layout)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Főbb funkciók: Persistent Layout (fix sidebar és reklámfelületek, csak a belső tartalom frissül), reszponzív idővonal a motorfelújításról, YouTube videóbeágyazás.
 
-## Recommended Browser Setup
+Szakmai kihívás: A projekt eredetileg statikus HTML/CSS-ként indult, majd a jobb karbantarthatóság (DRY elv) és az egy helyen kezelhető szponzori sáv miatt Vue 3-as komponens-architektúrára lett átültetve.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Project Setup
 

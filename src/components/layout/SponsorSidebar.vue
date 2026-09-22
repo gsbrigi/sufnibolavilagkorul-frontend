@@ -8,7 +8,7 @@
         href="https://mipacolor.hu/"
         target="_blank"
         rel="noopener noreferrer"
-        class="sponsor-box banner-300x250"
+        class="sponsor-box banner-300x150"
       >
         <div class="ad-placeholder">
         <img src="/mipa.webp" alt="Mipa Color" class="sponsor-img"/>
@@ -20,10 +20,34 @@
         href="https://motoralkatresz.eu/"
         target="_blank"
         rel="noopener noreferrer"
-        class="sponsor-box banner-300x250"
+        class="sponsor-box banner-300x150"
       >
         <div class="ad-placeholder">
         <img src="/motoralkatresz.png" alt="Motoralkatrészek" class="sponsor-img"/>
+        </div>
+      </a>
+
+      <!-- Szponzor 3 -->
+      <a
+        href="https://baurgerking.hu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="sponsor-box banner-300x150"
+      >
+        <div class="ad-placeholder">
+        <img src="/baur.jpg" alt="Baur Pizza & food" class="sponsor-img"/>
+        </div>
+      </a>
+
+      <!-- Szponzor 4 -->
+      <a
+        href="https://hulita.hu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="sponsor-box banner-300x150"
+      >
+        <div class="ad-placeholder">
+        <img src="/hulita.jpg" alt="Hulita" class="sponsor-img"/>
         </div>
       </a>
     </div>
@@ -70,7 +94,7 @@ const sponsor2 = {
 .ad-placeholder {
   background-color: #f1f5f9;
   color: #94a3b8;
-  height: 250px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
