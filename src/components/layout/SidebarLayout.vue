@@ -210,10 +210,12 @@ import { RouterLink, RouterView } from 'vue-router'
   color: #0f172a;
 }
 
-/* Gördülhető középső rész */
+/* ✨ JAVÍTVA: Gördülhető középső rész magasság korlátozással */
 .app-main-content {
-  overflow-y: auto;
+  height: calc(100vh - 70px); /* Levonjuk a fejléc magasságát a teljes képernyőből */
+  overflow-y: auto;           /* Kényszerítjük a belső függőleges görgetést */
   padding: 32px;
+  background-color: #f8fafc;
 }
 .content-wrapper {
   max-width: 900px;

@@ -48,3 +48,17 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+/* A 'scoped' kulcsszó miatt ezek a stílusok CSAK ezen az oldalon fognak élni, 
+   nem tudják elrontani a főoldalt vagy a sidebart! */
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+.page-subtitle {
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+</style>

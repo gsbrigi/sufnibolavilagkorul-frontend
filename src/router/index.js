@@ -4,8 +4,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 // Figyelj a pontos fájlnevekre és kiterjesztésekre!
 import HomeView from '../views/HomeView.vue' 
 import Motorfelujitas from '../views/Motorfelujitas.vue'
+import Videok from '../views/Videok.vue'
 import Turak from '../views/Turak.vue'
 import Motorrol from '../views/Motorrol.vue'
+import Rolunk from '../views/Rolunk.vue'
+
 
 // Ideiglenes megoldás a Rólunk oldalra, hogy ne akadjon ki a router, ha még nincs kész a fájl
 const RolunkPlaceholder = { template: '<div><h2>👤 Rólunk</h2><p>Hamarosan...</p></div>' }
@@ -24,6 +27,11 @@ const router = createRouter({
       component: Motorfelujitas,
     },
     {
+      path: '/videok',
+      name: 'videok',
+      component: Videok,
+    },
+    {
       path: '/turak',
       name: 'turak',
       component: Turak,
@@ -36,7 +44,7 @@ const router = createRouter({
     {
       path: '/rolunk', // ✨ HOZZÁADVA: így a sidebarban a Rólunk gomb is működni fog!
       name: 'rolunk',
-      component: RolunkPlaceholder, // Ha megvan a fájl, írd át simán Rolunk-ra!
+      component: Rolunk, // Ha megvan a fájl, írd át simán Rolunk-ra!
     },
     // Később ide jön majd a videok.vue, rolunk.vue stb. ugyanígy!
   ],
